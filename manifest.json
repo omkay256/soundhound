@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "SoundHound",
+  "description": "",
+  "version": "1.0",
+  "commands": {
+	"goto-sound-tab": {
+	  "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+	  "description": "Switch to a tab playing sound"
+	}
+  },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+	"tabs"
+  ]
+}
